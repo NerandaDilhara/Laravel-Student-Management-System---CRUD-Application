@@ -7,6 +7,61 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Title
+Laravel Student Management System - CRUD Application
+
+## Overview
+This Student Management System is built with Laravel, using MVC Architecture, and deployed locally with MySQL and XAMPP. It enables administrators to manage student data efficiently through a user-friendly interface with Create, Read, Update, and Delete (CRUD) functionalities.
+
+## Key Features:
+
+CRUD Operations: <br>
+Perform seamless Create, Read, Update, and Delete actions on student records.<br>
+
+MVC Architecture: <br>
+Ensures code separation for maintainability and scalability.<br>
+
+Blade Templating: <br>
+Dynamic UI built with Laravel's Blade engine.<br>
+
+Validation: <br>
+Built-in validation for data integrity.<br>
+
+MySQL Integration: <br>
+Persistent storage with robust data handling using Laravel Eloquent ORM.<br>
+
+XAMPP for Local Server: <br>
+Simplified local server setup with Apache and MySQL through XAMPP.<br>
+
+
+## How to Set Up Locally Using XAMPP
+
+### Clone the repository
+git clone https://github.com/nerandadilhara/laravel-student-management.git<br>
+cd laravel-student-management
+
+### Start the XAMPP server
+Open the XAMPP control panel and ensure Apache and MySQL are running.
+
+### Set up the database
+Open phpMyAdmin (http://localhost/phpmyadmin) and create a database named student_management.
+
+### Install dependencies
+composer install
+
+### Configure the .env file
+Update database credentials as per your local XAMPP setup (default username: root, password: empty).
+
+### Run migrations to set up the database schema:
+php artisan migrate
+
+### Start the Laravel development server:
+php artisan serve
+
+### Access the application
+Open your browser and go to http://localhost:8000.
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
